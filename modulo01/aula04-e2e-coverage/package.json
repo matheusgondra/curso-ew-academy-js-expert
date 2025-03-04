@@ -1,0 +1,24 @@
+{
+  "name": "aula04-e2e-coverage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/api.js",
+    "dev": "node --watch src/api.js",
+    "test": "mocha src/*.test.js",
+    "test:dev": "mocha -w src/*.test.js",
+    "test:cov": "nyc mocha src/*.test.js"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "nyc": "^17.1.0",
+    "supertest": "6.3.3"
+  }
+}

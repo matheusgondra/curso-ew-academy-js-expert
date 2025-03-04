@@ -1,0 +1,17 @@
+[
+  {
+    "id": "64a26c58-7b9a-40cf-9209-3a3ebc9302f4",
+    "name": "Mustang",
+    "available": true
+  },
+  {
+    "id": "361eaaf8-7e84-4b62-9f4d-830cc75e245b",
+    "name": "Fiesta",
+    "available": true
+  },
+  {
+    "id": "f129eac2-5150-4072-8b88-3fd190860ae7",
+    "name": "Civic",
+    "available": true
+  }
+]

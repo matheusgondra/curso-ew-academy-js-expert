@@ -1,0 +1,23 @@
+[
+  {
+    "id": "5e1e2144-361c-4327-8c12-6de0cf91b276",
+    "name": "Grand Cherokee",
+    "releaseYear": 2024,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "e6a359ef-2041-498a-8b17-d2457114e00f",
+    "name": "Civic",
+    "releaseYear": 2024,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "d80b0574-19f4-4297-a0af-6b668bb03fb9",
+    "name": "Model S",
+    "releaseYear": 2024,
+    "available": true,
+    "gasAvailable": true
+  }
+]

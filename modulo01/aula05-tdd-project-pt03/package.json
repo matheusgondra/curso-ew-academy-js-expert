@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "node --watch src/presentation/server.js",
     "test": "mocha **/**/*.test.js",
     "test:dev": "mocha -w **/**/*.test.js",
     "test:cov": "nyc mocha **/**/*.test.js",
@@ -17,6 +18,7 @@
     "faker": "5.1.0",
     "mocha": "8",
     "nyc": "15",
-    "sinon": "9"
+    "sinon": "9",
+    "supertest": "^7.0.0"
   }
 }

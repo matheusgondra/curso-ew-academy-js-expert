@@ -32,3 +32,38 @@ When I rent a car I should see the customer data
 And the car selected
 And the final price which will be R$ 244,40
 And DueDate which will be printed in Brazilian Portuguese format "10 de Novembro de 2020"
+
+# História: Alugar um carro
+
+## Caso de Uso 01
+
+Como um usuário do sistema
+Para obter um carro disponível em uma categoria específica
+Dada uma categoria de carro contendo 3 carros diferentes
+Quando eu verificar se há um carro disponível
+Então ele deve escolher aleatoriamente um carro da categoria escolhida
+
+## Caso de Uso 02
+
+Como um usuário do sistema
+Para calcular o preço final do aluguel
+Dado um cliente que deseja alugar um carro por 5 dias
+E ele tem 50 anos
+Quando ele escolher uma categoria de carro que custa $37,6 por dia
+Então devo adicionar o imposto da idade dele que é 30% ao preço da categoria do carro
+Então a fórmula final será `((preço por dia * Imposto) * número de dias)`
+E o resultado final será `((37,6 * 1,3) * 5) = 244,4`
+E o preço final será impresso no formato brasileiro como "R$ 244,40"
+
+## Caso de Uso 03
+
+Como um usuário do sistema
+Para registrar uma transação de aluguel
+Dado um cliente registrado que tem 50 anos
+E um modelo de carro que custa $37,6 por dia
+E uma data de entrega que é para 05 dias atrás
+E dada uma data atual 05/11/2020
+Quando eu alugar um carro, devo ver os dados do cliente
+E o carro selecionado
+E o preço final que será R$ 244,40
+E a data de vencimento que será impressa no formato brasileiro "10 de Novembro de 2020"

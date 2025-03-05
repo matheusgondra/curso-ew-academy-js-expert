@@ -1,0 +1,19 @@
+@base_url = http://localhost:3000
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+    "customer": {
+        "name": "Thomas Borer",
+        "age": 21
+    },
+    "carCategory": {
+        "name": "Coupe",
+        "carIds": [
+            "5e1e2144-361c-4327-8c12-6de0cf91b276"
+        ],
+        "price": 82.85
+    },
+    "numberOfDays": 6
+}

@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "dev": "node --watch  src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --parallel test/*.test.js",
+    "test:dev": "mocha -w --parallel test/*.test.js",
+    "test:cov": "nyc mocha -r reify test/*.test.js"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +18,12 @@
     "chalk": "4",
     "chalk-table": "1",
     "draftlog": "1"
+  },
+  "devDependencies": {
+    "chai": "4",
+    "mocha": "8",
+    "nyc": "15",
+    "reify": "^0.20.12",
+    "sinon": "9"
   }
 }

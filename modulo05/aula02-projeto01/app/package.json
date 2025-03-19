@@ -1,0 +1,23 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --parallel test/*.test.js",
+    "test:dev": "pnpm test -w",
+    "test:cov": "nyc mocha -r reify test/*.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.5.2",
+  "devDependencies": {
+    "chai": "4",
+    "mocha": "8",
+    "nyc": "15"
+  },
+  "dependencies": {
+    "pdf-parse": "^1.1.1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "04-decorator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node example/http-server.js",
+    "test": "set NODE_OPTIONS=--experimental-vm-modules && jest --runInBand --config ./jest.config.cjs",
+    "test:cov": "set NODE_OPTIONS=--experimental-vm-modules && jest --config ./jest.config.cjs --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.5.2",
+  "devDependencies": {
+    "jest": "26"
+  }
+}

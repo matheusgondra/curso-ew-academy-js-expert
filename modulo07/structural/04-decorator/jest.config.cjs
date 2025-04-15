@@ -13,6 +13,6 @@ module.exports = {
 	},
 	maxWorkers: "50%",
 	testEnvironment: "node",
-	rootDir: "./test",
+	rootDir: ".",
 	watchPathIgnorePatterns: ["node_modules"]
 };

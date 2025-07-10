@@ -4,6 +4,10 @@ import { join } from "path";
 import fsPromises from "fs/promises";
 import { createLayersIfNotExists } from "../../src/createLayers.js";
 
+async function getFolders({ mainPath, defaultMainFolder }) {
+    return fsPromises.readdir(join(mainPath, defaultMainFolder));
+}
+
 describe("#Integration - Layers - Folders Structure", () => {
     let tmpDirectory = "";
     const config = {
@@ -29,11 +33,19 @@ describe("#Integration - Layers - Folders Structure", () => {
         const beforeRun = await fsPromises.readdir(config.mainPath);
 
         await createLayersIfNotExists(config);
-        const afterRun = await fsPromises.readdir(join(config.mainPath, config.defaultMainFolder));
+        const afterRun = await getFolders(config);
 
         expect(beforeRun).not.toStrictEqual(afterRun);
         expect(afterRun).toEqual(config.layers);
     });
 
-    test.todo("should not create folders if it doenst exists");
+    test("should not create folders if it doenst exists", async () => {
+        const beforeRun = await getFolders(config);
+        
+        await createLayersIfNotExists(config);
+
+        const afterRun = await getFolders(config);
+
+        expect(afterRun).toEqual(beforeRun);
+    });
 });

@@ -15,7 +15,7 @@ export default class $$componentNameService {
     }
 
     read(query) {
-        return $$currentContext.read(data);
+        return $$currentContext.read(query);
     }
 
     update(id, data) {
